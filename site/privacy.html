@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NORMA — Privacy Policy</title>
+<style>
+  :root { color-scheme: dark; }
+  body {
+    margin: 0; padding: 4rem 1.5rem;
+    background: #0b0d10; color: #e8eaed;
+    font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, system-ui, sans-serif;
+  }
+  main { max-width: 34rem; margin: 0 auto; }
+  h1 { font-size: 2rem; font-weight: 600; letter-spacing: -0.02em; margin: 0 0 0.25rem; }
+  .sub { color: #9aa1ab; margin: 0 0 2.5rem; }
+  h2 { font-size: 1rem; text-transform: uppercase; letter-spacing: 0.12em;
+       color: #9aa1ab; font-weight: 600; margin: 2.5rem 0 0.75rem; }
+  ul { padding-left: 1.1rem; }
+  li { margin-bottom: 0.4rem; }
+  a { color: #7dd3fc; }
+  footer { margin-top: 3.5rem; padding-top: 1.5rem; border-top: 1px solid #1e242c;
+           color: #6b7280; font-size: 0.9rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Privacy Policy</h1>
+  <p class="sub">NORMA · last updated 20 September 2026</p>
+
+  <p>
+    NORMA is a personal home-display project run by one person on their own
+    Raspberry Pi. It has a single user: its owner. Nothing it reads is sold,
+    shared, or sent anywhere except to the services the owner connects it to.
+  </p>
+
+  <h2>What NORMA accesses</h2>
+  <p>
+    When the owner connects a Google account, NORMA requests the Google Tasks
+    scope (<code>https://www.googleapis.com/auth/tasks</code>). It uses that access to:
+  </p>
+  <ul>
+    <li>read open tasks, so the display can show them;</li>
+    <li>mark a task completed, when someone ticks it off on the display;</li>
+    <li>create a task, when someone asks the assistant to remember something.</li>
+  </ul>
+  <p>
+    NORMA requests no other Google scope. It does not read Gmail, Drive,
+    Contacts, Photos, or location history.
+  </p>
+
+  <h2>Where the data goes</h2>
+  <ul>
+    <li>Task data is fetched directly by the device on the home network and held
+        in memory to draw the screen. It is not written to a database.</li>
+    <li>The Google sign-in token is stored in a file on the device, readable only
+        by the account that runs NORMA.</li>
+    <li>Nothing is transmitted to the author, to any analytics service, or to any
+        third party. There is no server other than the device itself.</li>
+  </ul>
+
+  <h2>Other services</h2>
+  <p>
+    Depending on what its owner configures, NORMA may also talk to Spotify
+    (playback), Open-Meteo (weather), Yahoo Finance (share prices), Apple iCloud
+    (calendar), and Anthropic or Google (the assistant's answers). Each is used
+    only to draw the display or answer a question asked at the device, under
+    that service's own terms.
+  </p>
+
+  <h2>Retention and deletion</h2>
+  <p>
+    Nothing is retained beyond what is on screen and the sign-in token. Deleting
+    the token file, or revoking access at
+    <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>,
+    ends NORMA's access immediately and permanently.
+  </p>
+
+  <h2>Contact</h2>
+  <p>ricardo.salame04@gmail.com</p>
+
+  <footer><a href="index.html">← NORMA</a></footer>
+</main>
+</body>
+</html>
